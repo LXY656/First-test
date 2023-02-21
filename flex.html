@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+    <link rel="stylesheet" type="text/css" href="./flex-test.css" />
+</head>
+
+<body class="flex">
+    <!--侧边栏-->
+    <div class="blue1 mgt8 mgl8" style="width: 200px"></div>
+
+    <!--主区域-->
+    <div class="flex1 flex column">
+        <!--头部栏-->
+        <div class="blue1 mgr8 mgt8 mgl8" style="height: 60px"></div>
+
+        <!--内容栏-->
+        <div class="flex1 flex" style="overflow: auto;">
+            <!--左内容栏-->
+            <div class="flex column mg8" style="flex: 3">
+                <!--数据区-->
+                <div class="flex">
+                    <div style="height: 200px" class="flex1 blue1 mgr8"></div>
+                    <div style="height: 200px" class="flex1 blue1 mgr8"></div>
+                    <div style="height: 200px" class="flex1 blue1 mgr8"></div>
+                    <div style="height: 200px" class="flex1 blue1 "></div>
+                </div>
+                <!--列表区-->
+                <div class="flex column">
+                    <div style="height: 160px;" class="blue1 mgt8"></div>
+                    <div style="height: 160px;" class="blue1 mgt8"></div>
+                    <div style="height: 160px;" class="blue1 mgt8"></div>
+                    <div style="height: 160px;" class="blue1 mgt8"></div>
+
+                </div>
+            </div>
+
+            <!--右内容栏-->
+            <div class="flex column mgr8 mgt8" style="flex: 1">
+                <!--提示区-->
+                <div style="flex:2" class="blue1 "></div>
+                <!--消息区-->
+                <div style="flex:3" class="blue1 mgt8"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
